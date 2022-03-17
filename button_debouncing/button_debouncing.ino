@@ -24,7 +24,7 @@ void state_writing(){
 
     digitalWrite(wifi_led_pin, wifi_bt_led_state);
     digitalWrite(bt_led_pin, !wifi_bt_led_state);
-}
+2}
 void debouncer(){
 
   int reading = digitalRead(wifi_bt_button_pin);
