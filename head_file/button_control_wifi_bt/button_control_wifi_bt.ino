@@ -1,38 +1,8 @@
-//
-///// WIFI backup
-//#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
-//#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
-//#endif
+//button control wifi and bluetooth communication using header files wifi.h and bt.h.
+//used 3 buttons to switch between wifi/bluetooth,sending/receiving.
+#include "bt.h"
+#include "wifi.h"
 
-#include "button_control_bt_wifi.h"
-WiFiUDP udp;
-
-Bounce2::Button wifi_bt_btn     = Bounce2::Button();
-Bounce2::Button wifi_snd_rc_btn = Bounce2::Button();
-Bounce2::Button bt_snd_rc_btn   = Bounce2::Button();
-int led_1_state = LOW;
-int led_2_state ;
-int led_3_state = LOW;
-int led_4_state ;
-int led_5_state = LOW;
-int led_6_state ;
-
-int received;
-char receivedChar;
-char sendChar;
-unsigned int localPort_ = 3333;
-const char * networkName = "Luqman IT";
-const char * networkPswd = "222333444";
-const char * udpAddress = "192.168.100.3";
-const int udpPort = 3333;
-boolean wifi_com_flag = false;
-boolean bt_com_flag = false;
-
-boolean bt_print_flag;
-boolean bt_print1_flag;
-boolean wf_print_flag;
-boolean wf_print1_flag;
-char packetBuffer[255];
 
 void bt_comm();
 void wifi();

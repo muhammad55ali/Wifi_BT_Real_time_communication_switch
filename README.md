@@ -10,3 +10,7 @@ In this repo we are are setting up a system for.
 - **tree_btn_led**           : Switching states of leds 6 with 3 button but this time button 1 as tree stem and button 2 and 3 as branches.
 - **button_conrol_bluetooth_communication**:Through button, switching bluetooth sending and bluetooth receiving.
 - **Buttoon_control_bt_wifi_communication**: Using 3 buttons, 1 for switching between wifi and bluetooth.other two buttons for switching between bluetooth sending and receiving and wifi sending and receiivng.
+- **Button_control_bt_wifi_comm_using_header_files** button control wifi and bluetooth communication using header files wifi.h and bt.h.
+used 3 buttons to switch between wifi/bluetooth,sending/receiving.
+   - wifi.h header file to handle all definitions and functions related to wifi communications
+   - bt.h file to handle all definitions and functions related to bluetooth communication.
